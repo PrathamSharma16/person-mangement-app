@@ -10,13 +10,16 @@ function getData(){
         if(this.status===200){
             let data = JSON.parse(this.responseText);
             
-            for(let index= 0;index<10;index++){
+            for(let i= 0;i<10;i++){
                 div.innerHTML+=`
                     <div class="col-3 text-white card bg-dark mx-auto border border-white" >
                     <div class="card-body" >
                         <p class="card-title">ID: ${data[con].id}</p>
                         <p class="card-title">Name: ${data[con].name}</p>
                         <p >Email: ${data[con].email}</p>
+                        <p >Address: ${data[con].address.suite},${data[con].address.street},${data[con].address.city}.</p>
+                        <p >Phone: ${data[con].phone}</p>
+                        <p >Website: ${data[con].website}</p>
                     </div>
                 </div>
             `

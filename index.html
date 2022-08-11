@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>APP</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -18,16 +19,16 @@
             <h2 id="text">Person Managment App</h2>
         </div>
         <div id="search-btn">
-            <form id="form"> 
-                <input type="search" id="query" name="q" placeholder="Search...">
-                <button>Search</button>
-              </form>
+            <div id="form"> 
+                <input type="search" id="query" placeholder="Search...">
+                <button  class="btn btn-warning">Search</button>
+            </div>
         </div>
     </div>
     
     <div id="container" class="container">
         <div class="row" id="profile">
-            <button type="button" class=" btn btn-primary">Get Profiles</button>
+            <button id="profile-btn" type="button" class="mx-auto btn btn-primary mt-2">Get Profiles</button>
 
         </div>
         <div class="row" id="postsDiv">
@@ -35,7 +36,7 @@
         </div>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="./ajax.js"></script>
 </body>
 </html>
