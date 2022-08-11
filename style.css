@@ -24,4 +24,11 @@
 #profile{
     text-align: center;
     padding: 2rem;
+    border: blue;
+}
+#container{
+    border: green;
+}
+#postDiv{
+    border: pink;
 }
