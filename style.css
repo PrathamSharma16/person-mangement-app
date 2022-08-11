@@ -1,0 +1,27 @@
+#top_div{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    background-color: aqua;
+       
+}
+
+#logo_img{
+    height: 50px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+#text{
+    font-weight:bold;
+}
+#search-btn{
+    position: fixed;
+    right: 20px;
+    padding-top: 2rem;
+}
+#profile{
+    text-align: center;
+    padding: 2rem;
+}
